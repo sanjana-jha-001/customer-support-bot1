@@ -33,7 +33,7 @@ if user_input:
 
     llm = ChatHuggingFace(llm=HuggingFaceEndpoint(
         repo_id="meta-llama/Llama-3.1-8B-Instruct",
-        huggingfacehub_api_token=HF_API_TOKEN,
+        huggingfacehub_api_token=hf_token,
         provider="auto",
         temperature=0.3,
         max_new_tokens=512,
